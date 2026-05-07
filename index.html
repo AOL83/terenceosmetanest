@@ -1,1020 +1,631 @@
-# Aurora Nest — Multi-Page Sovereign Runtime Project
+<!-- ========================================= -->
+<!-- AURORA GLOBAL RUNTIME SPINE COMPONENT -->
+<!-- PLACE THIS SAME BLOCK AT THE TOP OF -->
+<!-- EVERY HTML PAGE IN THE ENTIRE ECOSYSTEM -->
+<!-- ========================================= -->
 
-## Aurora Logistical Eco Holdings
+<nav class="aurora-navbar" id="auroraNavbar">
 
-```text
-PROJECT STRUCTURE
+    <div class="aurora-logo">
+        <a href="index.html">
+            <h1>AURORA NEST</h1>
+            <span>SOVEREIGN META RUNTIME</span>
+        </a>
+    </div>
 
-/aurora-nest/
-│
-├── index.html
-├── runtime.html
-├── modules.html
-├── ecosystem.html
-├── dashboard.html
-├── ai.html
-├── storage.html
-├── deployment.html
-├── sovereignty.html
-│
-├── /css/
-│   ├── spine.css
-│   ├── runtime.css
-│   ├── orbital.css
-│
-├── /js/
-│   ├── spine.js
-│   ├── navigation.js
-│   ├── ecosystem.js
-│   ├── runtime.js
-│
-├── /assets/
-│   ├── icons/
-│   ├── images/
-│
-└── /storage/
-```
+    <!-- DESKTOP NAVIGATION -->
+    <div class="aurora-nav-links">
 
----
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="runtime.html">Runtime</a>
+        <a href="modules.html">Modules</a>
+        <a href="ecosystem.html">Ecosystem</a>
+        <a href="ai.html">AI Runtime</a>
+        <a href="storage.html">Storage</a>
+        <a href="deployment.html">Deploy</a>
 
-# index.html
+    </div>
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aurora Nest</title>
-<link rel="stylesheet" href="css/spine.css">
-<link rel="stylesheet" href="css/runtime.css">
-</head>
-<body>
+    <!-- HAMBURGER -->
+    <button class="aurora-hamburger" id="auroraHamburger">
 
-<nav class="navbar" id="navbar">
+        <span></span>
+        <span></span>
+        <span></span>
 
-<div class="logo">
-<h1>AURORA NEST</h1>
-<span>SOVEREIGN META RUNTIME</span>
-</div>
+    </button>
 
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="runtime.html">Runtime</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="modules.html">Modules</a>
-<a href="ecosystem.html">Ecosystem</a>
-<a href="ai.html">AI</a>
-<a href="storage.html">Storage</a>
-<a href="deployment.html">Deploy</a>
-</div>
+    <!-- MOBILE MENU -->
+    <div class="aurora-mobile-menu" id="auroraMobileMenu">
 
-<div class="hamburger" id="hamburger">
-☰
-</div>
+        <a href="index.html">Home Territory</a>
 
-<div class="mobile-menu" id="mobileMenu">
-<a href="index.html">Home</a>
-<a href="runtime.html">Runtime</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="modules.html">Modules</a>
-<a href="ecosystem.html">Ecosystem</a>
-<a href="ai.html">AI</a>
-<a href="storage.html">Storage</a>
-<a href="deployment.html">Deploy</a>
-</div>
+        <a href="dashboard.html">
+            Runtime Dashboard
+        </a>
+
+        <a href="runtime.html">
+            Runtime Infrastructure
+        </a>
+
+        <a href="modules.html">
+            Modular Expansion
+        </a>
+
+        <a href="ecosystem.html">
+            Connected Ecosystem
+        </a>
+
+        <a href="ai.html">
+            AI Runtime Territory
+        </a>
+
+        <a href="storage.html">
+            Storage Territories
+        </a>
+
+        <a href="deployment.html">
+            Deployment Infrastructure
+        </a>
+
+    </div>
 
 </nav>
 
-<section class="hero">
-<div class="hero-container">
+<style>
 
-<div class="hero-left">
-<h2>AURORA LOGISTICAL ECO HOLDINGS</h2>
+/* ========================================= */
+/* AURORA GLOBAL SPINE */
+/* ========================================= */
 
-<h1>
-HTML CONTROL NEST
-<br>
-<span>META RUNTIME</span>
-</h1>
-
-<p>
-A sovereign browser-native computational habitat designed to unify runtime territories, AI systems, distributed repositories and modular infrastructure inside one persistent HTML operational shell.
-</p>
-
-<div class="buttons">
-<a href="dashboard.html" class="btn btn-primary">ENTER NEST</a>
-<a href="runtime.html" class="btn btn-secondary">VIEW RUNTIME</a>
-</div>
-</div>
-
-<div class="hero-core">
-<div class="core">
-<h3>NEST CORE</h3>
-</div>
-</div>
-
-</div>
-</section>
-
-<footer>
-<div class="footer-container">
-
-<div class="footer-column">
-<h3>AURORA</h3>
-<p>Sovereign Browser Runtime Environment</p>
-</div>
-
-<div class="footer-column">
-<h3>Infrastructure</h3>
-<ul>
-<li>Runtime Territories</li>
-<li>Distributed Systems</li>
-<li>Local First Storage</li>
-<li>AI Runtime Integration</li>
-</ul>
-</div>
-
-<div class="footer-column">
-<h3>Deployment</h3>
-<ul>
-<li>GitHub Compatible</li>
-<li>Plug & Play Runtime</li>
-<li>Offline Capable</li>
-<li>Portable Infrastructure</li>
-</ul>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-AURORA NEST • SOVEREIGN META RUNTIME
-</div>
-</footer>
-
-<script src="js/spine.js"></script>
-<script src="js/navigation.js"></script>
-
-</body>
-</html>
-```
-
----
-
-# runtime.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Runtime Infrastructure</title>
-<link rel="stylesheet" href="css/spine.css">
-</head>
-<body>
-
-<div class="page-shell">
-<h1 class="page-title">Runtime Infrastructure</h1>
-
-<div class="runtime-grid">
-
-<div class="runtime-card">
-<h3>Frontend Runtime Shell</h3>
-<p>Persistent sovereign interaction territory.</p>
-</div>
-
-<div class="runtime-card">
-<h3>Distributed Backend Territories</h3>
-<p>Optional compute orchestration infrastructure.</p>
-</div>
-
-<div class="runtime-card">
-<h3>Local First Systems</h3>
-<p>Offline persistent continuity and memory.</p>
-</div>
-
-<div class="runtime-card">
-<h3>Cross Platform Orchestration</h3>
-<p>Unified ecosystem interaction layer.</p>
-</div>
-
-</div>
-</div>
-
-<script src="js/spine.js"></script>
-</body>
-</html>
-```
-
----
-
-# dashboard.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard</title>
-<link rel="stylesheet" href="css/spine.css">
-</head>
-<body>
-
-<div class="page-shell">
-
-<h1 class="page-title">Runtime Dashboard</h1>
-
-<div class="dashboard-grid">
-
-<div class="dashboard-panel">
-<h3>Runtime Status</h3>
-<p>Operational</p>
-</div>
-
-<div class="dashboard-panel">
-<h3>Storage Territories</h3>
-<p>Connected</p>
-</div>
-
-<div class="dashboard-panel">
-<h3>AI Runtime</h3>
-<p>Awaiting Module Attachment</p>
-</div>
-
-<div class="dashboard-panel">
-<h3>Deployment Layer</h3>
-<p>GitHub Ready</p>
-</div>
-
-</div>
-
-</div>
-
-<script src="js/spine.js"></script>
-</body>
-</html>
-```
-
----
-
-# ecosystem.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ecosystem</title>
-<link rel="stylesheet" href="css/spine.css">
-<link rel="stylesheet" href="css/orbital.css">
-</head>
-<body>
-
-<section class="orbital-section">
-
-<div class="orbital-container">
-
-<h1 class="page-title">
-Connected Runtime Territories
-</h1>
-
-<div class="orbit-wrapper">
-
-<div class="orbit-ring ring-one"></div>
-<div class="orbit-ring ring-two"></div>
-
-<div class="center-core">
-<h2>NEST CORE</h2>
-</div>
-
-<a class="bubble github" href="https://github.com">
-<div class="bubble-inner">
-<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
-<span>GitHub</span>
-</div>
-</a>
-
-<a class="bubble youtube" href="https://youtube.com">
-<div class="bubble-inner">
-<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
-<span>YouTube</span>
-</div>
-</a>
-
-<a class="bubble instagram" href="https://instagram.com">
-<div class="bubble-inner">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-<span>Instagram</span>
-</div>
-</a>
-
-<a class="bubble linkedin" href="https://linkedin.com">
-<div class="bubble-inner">
-<img src="https://cdn-icons-png.flaticon.com/512/145/145807.png">
-<span>LinkedIn</span>
-</div>
-</a>
-
-<a class="bubble drive" href="#">
-<div class="bubble-inner">
-<img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
-<span>Drive</span>
-</div>
-</a>
-
-<a class="bubble xplatform" href="https://x.com">
-<div class="bubble-inner">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png">
-<span>X</span>
-</div>
-</a>
-
-<a class="bubble substack" href="https://substack.com">
-<div class="bubble-inner">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png">
-<span>Substack</span>
-</div>
-</a>
-
-<a class="bubble ai" href="ai.html">
-<div class="bubble-inner">
-<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
-<span>AI Runtime</span>
-</div>
-</a>
-
-</div>
-</div>
-</section>
-
-<script src="js/ecosystem.js"></script>
-</body>
-</html>
-```
-
----
-
-# ai.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Runtime</title>
-<link rel="stylesheet" href="css/spine.css">
-</head>
-<body>
-
-<div class="page-shell">
-
-<h1 class="page-title">AI Runtime Territory</h1>
-
-<div class="ai-console">
-
-<div class="console-window">
-<div class="console-header">
-<div class="dot red"></div>
-<div class="dot yellow"></div>
-<div class="dot green"></div>
-</div>
-
-<div class="console-body">
-<p>> initialise aurora-ai-runtime</p>
-<p>> loading local-first orchestration</p>
-<p>> awaiting module attachment</p>
-<p class="success">✓ Runtime Active</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</body>
-</html>
-```
-
----
-
-# storage.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Storage</title>
-<link rel="stylesheet" href="css/spine.css">
-</head>
-<body>
-
-<div class="page-shell">
-
-<h1 class="page-title">Storage Territories</h1>
-
-<div class="storage-grid">
-
-<div class="storage-card">
-<h3>IndexedDB Runtime</h3>
-<p>Local persistent browser memory.</p>
-</div>
-
-<div class="storage-card">
-<h3>Cloud Synchronisation</h3>
-<p>Optional external continuity systems.</p>
-</div>
-
-<div class="storage-card">
-<h3>Repository Storage</h3>
-<p>Distributed runtime infrastructure.</p>
-</div>
-
-</div>
-
-</div>
-
-</body>
-</html>
-```
-
----
-
-# deployment.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deployment</title>
-<link rel="stylesheet" href="css/spine.css">
-</head>
-<body>
-
-<div class="page-shell">
-
-<h1 class="page-title">Deployment Infrastructure</h1>
-
-<div class="deployment-panel">
-
-<h3>GitHub Deployment</h3>
-<p>
-Upload the Aurora Nest project folder directly to a GitHub repository and deploy using GitHub Pages.
-</p>
-
-<div class="deploy-box">
-<p>/aurora-nest/</p>
-<p>├── index.html</p>
-<p>├── css/</p>
-<p>├── js/</p>
-<p>├── assets/</p>
-</div>
-
-</div>
-
-</div>
-
-</body>
-</html>
-```
-
----
-
-# css/spine.css
-
-```css
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:#050505;
-color:white;
 font-family:Arial, Helvetica, sans-serif;
 overflow-x:hidden;
+color:white;
 }
 
-.page-shell{
-max-width:1400px;
-margin:auto;
-padding:160px 24px 120px;
+/* ========================================= */
+/* GLOBAL BACKGROUND */
+/* ========================================= */
+
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left,
+rgba(182,255,0,0.16),
+transparent 35%),
+
+radial-gradient(circle at bottom right,
+rgba(255,0,80,0.12),
+transparent 35%),
+
+radial-gradient(circle at center,
+rgba(255,230,0,0.06),
+transparent 40%);
+filter:blur(40px);
+z-index:-2;
 }
 
-.page-title{
-font-size:4rem;
-margin-bottom:60px;
-line-height:1;
+body::after{
+content:'';
+position:fixed;
+inset:0;
+
+background:
+linear-gradient(
+rgba(255,255,255,0.015) 1px,
+transparent 1px
+),
+
+linear-gradient(
+90deg,
+rgba(255,255,255,0.015) 1px,
+transparent 1px
+);
+
+background-size:40px 40px;
+
+z-index:-1;
 }
 
-.navbar{
+/* ========================================= */
+/* NAVBAR */
+/* ========================================= */
+
+.aurora-navbar{
+
 position:fixed;
 top:0;
 left:0;
+
 width:100%;
-padding:20px 28px;
-background:rgba(0,0,0,0.35);
-backdrop-filter:blur(20px);
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-z-index:999;
-}
 
-.logo h1{
-color:#b6ff00;
-letter-spacing:4px;
-text-shadow:0 0 25px #b6ff00;
-}
+padding:20px 34px;
 
-.nav-links{
-display:flex;
-gap:24px;
-}
+background:rgba(0,0,0,0.28);
 
-.nav-links a{
-color:white;
-text-decoration:none;
-text-transform:uppercase;
-font-size:0.8rem;
-letter-spacing:2px;
-}
-
-.runtime-grid,
-.dashboard-grid,
-.storage-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:24px;
-}
-
-.runtime-card,
-.dashboard-panel,
-.storage-card,
-.deployment-panel{
-background:rgba(255,255,255,0.03);
-border:1px solid rgba(182,255,0,0.15);
-border-radius:28px;
-padding:40px;
-backdrop-filter:blur(30px);
-}
-
-.console-window{
-background:black;
-border:1px solid rgba(182,255,0,0.15);
-border-radius:24px;
-overflow:hidden;
-}
-
-.console-header{
-display:flex;
-gap:10px;
-padding:18px;
-background:#111;
-}
-
-.dot{
-width:14px;
-height:14px;
-border-radius:50%;
-}
-
-.red{background:red;}
-.yellow{background:yellow;}
-.green{background:lime;}
-
-.console-body{
-padding:30px;
-font-family:monospace;
-line-height:2;
-color:#b6ff00;
-}
-
-.success{
-color:#00ff88;
-}
-
-footer{
-padding:90px 24px;
-}
-```
-
----
-
-# js/spine.js
-
-```javascript
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-
-if(window.scrollY > 40){
-navbar.classList.add('scrolled');
-}else{
-navbar.classList.remove('scrolled');
-}
-
-});
-```
-
----
-
-# js/navigation.js
-
-```javascript
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-
-hamburger.addEventListener('click', () => {
-mobileMenu.classList.toggle('active');
-});
-```
-
----
-
-# js/ecosystem.js
-
-```javascript
-const bubbles = document.querySelectorAll('.bubble');
-
-bubbles.forEach(bubble => {
-
-bubble.addEventListener('mousemove', e => {
-
-const rect = bubble.getBoundingClientRect();
-const x = e.clientX - rect.left;
-const y = e.clientY - rect.top;
-
-bubble.style.transform = `
-rotateY(${(x - rect.width/2)/10}deg)
-rotateX(${-(y - rect.height/2)/10}deg)
-scale(1.08)
-`;
-
-});
-
-bubble.addEventListener('mouseleave', () => {
-bubble.style.transform = 'rotateY(0deg) rotateX(0deg) scale(1)';
-});
-
-});
-```
-
----
-
----
-
-# EMBRYO SHELL RUNTIME ARCHITECTURE
-
-The Aurora Nest ecosystem now receives a higher-order sovereign runtime wrapper.
-
-This becomes:
-
-> the Embryo Shell.
-
-The Embryo Shell is:
-
-* an outer HTML runtime nest,
-* a sovereign orchestration habitat,
-* and the operational shell surrounding all runtime territories.
-
-Instead of the user navigating disconnected HTML pages directly:
-
-```text
-index.html
-runtime.html
-modules.html
-ai.html
-storage.html
-```
-
-The user now enters:
-
-```text
-embryo.html
-```
-
-Which dynamically loads all runtime territories internally.
-
----
-
-# UPDATED ARCHITECTURE
-
-```text
-/aurora-nest/
-│
-├── embryo.html          ← Sovereign Runtime Shell
-├── index.html           ← Home Territory
-├── runtime.html         ← Runtime Territory
-├── modules.html         ← Modular Infrastructure
-├── dashboard.html       ← User Operations
-├── ecosystem.html       ← Connected Territories
-├── ai.html              ← AI Runtime Territory
-├── storage.html         ← Storage Infrastructure
-├── deployment.html      ← Deployment Territory
-│
-├── /css/
-├── /js/
-├── /assets/
-└── /storage/
-```
-
----
-
-# embryo.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aurora Embryo Shell</title>
-
-<link rel="stylesheet" href="css/spine.css">
-
-<style>
-
-.runtime-shell{
-position:fixed;
-inset:0;
-display:flex;
-flex-direction:column;
-background:#050505;
-overflow:hidden;
-}
-
-.shell-topbar{
-height:72px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 24px;
-background:rgba(0,0,0,0.55);
 backdrop-filter:blur(20px);
-border-bottom:1px solid rgba(182,255,0,0.15);
-}
 
-.shell-logo h1{
-font-size:1.4rem;
-letter-spacing:4px;
-color:#b6ff00;
-text-shadow:0 0 18px #b6ff00;
-}
+border-bottom:1px solid rgba(182,255,0,0.12);
 
-.shell-layout{
-flex:1;
-display:flex;
-overflow:hidden;
-}
+z-index:9999;
 
-.shell-sidebar{
-width:280px;
-background:rgba(255,255,255,0.03);
-border-right:1px solid rgba(182,255,0,0.12);
-padding:30px 20px;
-overflow-y:auto;
-}
-
-.shell-sidebar a{
-display:block;
-padding:18px 20px;
-margin-bottom:14px;
-text-decoration:none;
-color:white;
-background:rgba(255,255,255,0.03);
-border:1px solid rgba(255,255,255,0.05);
-border-radius:18px;
-text-transform:uppercase;
-letter-spacing:2px;
 transition:0.4s;
+
 }
 
-.shell-sidebar a:hover{
-background:#b6ff00;
-color:black;
-transform:translateX(6px);
-box-shadow:0 0 25px rgba(182,255,0,0.4);
+.aurora-navbar.scrolled{
+
+background:rgba(0,0,0,0.78);
+
+padding:14px 34px;
+
+box-shadow:
+0 0 35px rgba(182,255,0,0.08);
+
 }
 
-.runtime-viewer{
-flex:1;
-position:relative;
-background:#000;
+/* ========================================= */
+/* LOGO */
+/* ========================================= */
+
+.aurora-logo a{
+text-decoration:none;
 }
 
-.runtime-frame{
-width:100%;
-height:100%;
-border:none;
-background:#000;
+.aurora-logo h1{
+
+font-size:2rem;
+
+letter-spacing:5px;
+
+color:#b6ff00;
+
+text-shadow:
+0 0 12px #b6ff00,
+0 0 25px rgba(182,255,0,0.4);
+
 }
 
-.runtime-status{
+.aurora-logo span{
+
+font-size:0.7rem;
+
+letter-spacing:3px;
+
+color:#9c9c9c;
+
+}
+
+/* ========================================= */
+/* DESKTOP NAVIGATION */
+/* ========================================= */
+
+.aurora-nav-links{
+
 display:flex;
-gap:18px;
-align-items:center;
+gap:28px;
+
+}
+
+.aurora-nav-links a{
+
+text-decoration:none;
+
+color:white;
+
 font-size:0.8rem;
-letter-spacing:2px;
+
 text-transform:uppercase;
-color:#999;
+
+letter-spacing:2px;
+
+transition:0.3s;
+
+position:relative;
+
 }
 
-.status-dot{
-width:12px;
-height:12px;
-border-radius:50%;
-background:#00ff88;
-box-shadow:0 0 12px #00ff88;
+.aurora-nav-links a:hover{
+
+color:#b6ff00;
+
+text-shadow:
+0 0 12px #b6ff00;
+
 }
 
-@media(max-width:980px){
+.aurora-nav-links a::after{
 
-.shell-layout{
-flex-direction:column;
+content:'';
+
+position:absolute;
+
+bottom:-6px;
+left:0;
+
+width:0%;
+height:1px;
+
+background:#b6ff00;
+
+transition:0.4s;
+
 }
 
-.shell-sidebar{
+.aurora-nav-links a:hover::after{
 width:100%;
-display:flex;
-gap:14px;
-overflow-x:auto;
-overflow-y:hidden;
-white-space:nowrap;
-padding:20px;
 }
 
-.shell-sidebar a{
-min-width:220px;
-margin-bottom:0;
+/* ========================================= */
+/* HAMBURGER */
+/* ========================================= */
+
+.aurora-hamburger{
+
+width:54px;
+height:54px;
+
+border-radius:16px;
+
+background:rgba(182,255,0,0.08);
+
+border:1px solid rgba(182,255,0,0.14);
+
+display:none;
+
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+gap:6px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.aurora-hamburger:hover{
+
+background:rgba(182,255,0,0.14);
+
+box-shadow:
+0 0 24px rgba(182,255,0,0.18);
+
+}
+
+.aurora-hamburger span{
+
+display:block;
+
+width:24px;
+height:2px;
+
+background:#b6ff00;
+
+border-radius:10px;
+
+transition:0.4s;
+
+}
+
+/* ========================================= */
+/* MOBILE MENU */
+/* ========================================= */
+
+.aurora-mobile-menu{
+
+position:fixed;
+
+top:88px;
+right:-100%;
+
+width:320px;
+height:auto;
+
+display:flex;
+flex-direction:column;
+
+padding:28px;
+
+gap:16px;
+
+background:rgba(0,0,0,0.92);
+
+backdrop-filter:blur(30px);
+
+border-left:1px solid rgba(182,255,0,0.14);
+
+border-bottom:1px solid rgba(182,255,0,0.14);
+
+border-radius:
+0 0 0 28px;
+
+transition:0.5s;
+
+z-index:9998;
+
+}
+
+.aurora-mobile-menu.active{
+right:0;
+}
+
+.aurora-mobile-menu a{
+
+text-decoration:none;
+
+padding:18px 20px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,0.03);
+
+border:1px solid rgba(255,255,255,0.04);
+
+color:white;
+
+font-size:0.8rem;
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+
+transition:0.4s;
+
+}
+
+.aurora-mobile-menu a:hover{
+
+background:#b6ff00;
+
+color:black;
+
+transform:translateX(-4px);
+
+box-shadow:
+0 0 25px rgba(182,255,0,0.35);
+
+}
+
+/* ========================================= */
+/* GLOBAL PAGE WRAPPER */
+/* ========================================= */
+
+.aurora-page{
+
+padding-top:140px;
+padding-left:24px;
+padding-right:24px;
+padding-bottom:120px;
+
+max-width:1500px;
+
+margin:auto;
+
+}
+
+/* ========================================= */
+/* PAGE TITLES */
+/* ========================================= */
+
+.aurora-title{
+
+font-size:5rem;
+
+line-height:0.95;
+
+margin-bottom:30px;
+
+}
+
+.aurora-title span{
+
+color:#b6ff00;
+
+text-shadow:
+0 0 25px #b6ff00;
+
+}
+
+.aurora-subtitle{
+
+max-width:780px;
+
+line-height:1.8;
+
+color:#a5a5a5;
+
+margin-bottom:60px;
+
+}
+
+/* ========================================= */
+/* GRID SYSTEM */
+/* ========================================= */
+
+.aurora-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:24px;
+
+}
+
+/* ========================================= */
+/* CARDS */
+/* ========================================= */
+
+.aurora-card{
+
+background:rgba(255,255,255,0.03);
+
+border:
+1px solid rgba(182,255,0,0.08);
+
+border-radius:30px;
+
+padding:40px;
+
+backdrop-filter:blur(20px);
+
+transition:0.4s;
+
+}
+
+.aurora-card:hover{
+
+transform:
+translateY(-8px);
+
+border-color:#b6ff00;
+
+box-shadow:
+0 0 40px rgba(182,255,0,0.12);
+
+}
+
+.aurora-card h3{
+
+font-size:1.4rem;
+
+margin-bottom:18px;
+
+}
+
+.aurora-card p{
+
+line-height:1.8;
+
+color:#9f9f9f;
+
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media(max-width:1100px){
+
+.aurora-nav-links{
+display:none;
+}
+
+.aurora-hamburger{
+display:flex;
+}
+
+.aurora-title{
+font-size:3.5rem;
+}
+
+}
+
+@media(max-width:700px){
+
+.aurora-navbar{
+padding:18px 20px;
+}
+
+.aurora-mobile-menu{
+
+width:100%;
+right:-100%;
+
+border-radius:0;
+
+}
+
+.aurora-logo h1{
+font-size:1.5rem;
+}
+
+.aurora-title{
+font-size:2.6rem;
 }
 
 }
 
 </style>
-</head>
-<body>
-
-<div class="runtime-shell">
-
-<div class="shell-topbar">
-
-<div class="shell-logo">
-<h1>AURORA EMBRYO SHELL</h1>
-</div>
-
-<div class="runtime-status">
-<div class="status-dot"></div>
-<span>Runtime Operational</span>
-</div>
-
-</div>
-
-<div class="shell-layout">
-
-<div class="shell-sidebar">
-
-<a href="#" data-page="index.html">Home Territory</a>
-<a href="#" data-page="dashboard.html">Dashboard</a>
-<a href="#" data-page="runtime.html">Runtime</a>
-<a href="#" data-page="modules.html">Modules</a>
-<a href="#" data-page="ecosystem.html">Ecosystem</a>
-<a href="#" data-page="ai.html">AI Runtime</a>
-<a href="#" data-page="storage.html">Storage</a>
-<a href="#" data-page="deployment.html">Deployment</a>
-
-</div>
-
-<div class="runtime-viewer">
-
-<iframe
-id="runtimeFrame"
-class="runtime-frame"
-src="index.html">
-</iframe>
-
-</div>
-
-</div>
-
-</div>
 
 <script>
 
-const frame = document.getElementById('runtimeFrame');
+/* ========================================= */
+/* GLOBAL SPINE LOGIC */
+/* ========================================= */
 
-const links = document.querySelectorAll('[data-page]');
+const auroraNavbar =
+document.getElementById('auroraNavbar');
 
-links.forEach(link => {
+window.addEventListener('scroll', () => {
 
-link.addEventListener('click', e => {
+if(window.scrollY > 40){
 
-e.preventDefault();
+auroraNavbar.classList.add('scrolled');
 
-const page = link.getAttribute('data-page');
+}else{
 
-frame.src = page;
+auroraNavbar.classList.remove('scrolled');
+
+}
+
+});
+
+/* ========================================= */
+/* HAMBURGER */
+/* ========================================= */
+
+const auroraHamburger =
+document.getElementById('auroraHamburger');
+
+const auroraMobileMenu =
+document.getElementById('auroraMobileMenu');
+
+auroraHamburger.addEventListener('click', () => {
+
+auroraMobileMenu.classList.toggle('active');
+
+});
+
+/* ========================================= */
+/* CLOSE MENU ON LINK CLICK */
+/* ========================================= */
+
+const auroraLinks =
+document.querySelectorAll(
+'.aurora-mobile-menu a'
+);
+
+auroraLinks.forEach(link => {
+
+link.addEventListener('click', () => {
+
+auroraMobileMenu.classList.remove('active');
 
 });
 
 });
 
 </script>
-
-</body>
-</html>
-```
-
----
-
-# WHAT THE EMBRYO SHELL DOES
-
-The Embryo Shell now acts as:
-
-✓ The sovereign operational wrapper
-✓ Runtime orchestrator
-✓ Territory loader
-✓ Persistent navigation habitat
-✓ Runtime continuity system
-✓ Browser-native operating layer
-✓ Distributed territory controller
-✓ HTML runtime hypervisor
-✓ Unified ecosystem shell
-
----
-
-# HOW IT FUNCTIONS
-
-Instead of:
-
-```text
-User visits separate pages directly
-```
-
-The user now:
-
-```text
-Enters embryo.html
-↓
-Embryo shell loads
-↓
-Runtime territories load internally
-↓
-Entire ecosystem operates as one sovereign unit
-```
-
----
-
-# ARCHITECTURAL RESULT
-
-Aurora Nest is now no longer merely:
-
-* a website,
-* or a multi-page frontend.
-
-It now behaves more like:
-
-✓ a browser-native operating environment
-✓ a sovereign runtime shell
-✓ a distributed HTML operating habitat
-✓ a modular runtime organism
-✓ a portable computational territory
-
----
-
-# PROJECT FUNCTIONALITY
-
-Aurora Nest now functions as:
-
-* a multi-page sovereign runtime environment,
-* a browser-native operational habitat,
-* a distributed modular ecosystem,
-* a GitHub deployable infrastructure shell,
-* and a persistent HTML/CSS/JavaScript runtime organism.
-
-The project now includes:
-
-✓ Multi-page runtime architecture
-✓ Shared HTML/CSS/JS spine
-✓ Responsive mobile-first navigation
-✓ Hamburger menu system
-✓ Dedicated runtime territories
-✓ 3D ecosystem orbital interface
-✓ Real company platform badges
-✓ Cyberpunk Edgerunners neon styling
-✓ Runtime dashboard
-✓ AI territory
-✓ Storage territory
-✓ Deployment infrastructure territory
-✓ Plug-and-play GitHub architecture
-✓ Local-first runtime philosophy
-✓ Sovereign runtime continuity
